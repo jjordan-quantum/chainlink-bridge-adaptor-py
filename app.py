@@ -3,8 +3,7 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route("/test_bridge")
-
+@app.route("/test_bridge", methods=["POST"])
 def test_bridge():
     return "Bridge response"
 
